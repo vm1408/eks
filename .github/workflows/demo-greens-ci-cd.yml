@@ -62,4 +62,5 @@ jobs:
       
        sed -i "s|default/greens-demo|${{ env.RELEASE_IMAGE }}|g" k8s.yaml
        cat k8s.yaml
-       kubectl apply -f k8s.yaml k8s-service.yaml
+       kubectl apply -f k8s-service.yaml
+       kubectl apply -f k8s.yaml 
